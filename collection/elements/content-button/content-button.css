@@ -1,0 +1,39 @@
+content-button {
+  display: inline-block;
+}
+content-button[clickable-block=true] {
+  display: block;
+  width: 100%;
+}
+content-button[clickable-block=true] > content-element-wrapper {
+  height: 100%;
+  width: 100%;
+}
+content-button[clickable-block=true] > content-element-wrapper > .content-button {
+  height: 100%;
+  width: 100%;
+}
+content-button[clickable-block=true] > content-element-wrapper > .content-button > a,
+content-button[clickable-block=true] > content-element-wrapper > .content-button > button {
+  height: 100%;
+  width: 100%;
+}
+content-button[clickable-block=true] > content-element-wrapper > .content-button > a > *,
+content-button[clickable-block=true] > content-element-wrapper > .content-button > button > * {
+  display: block;
+  width: 100%;
+}
+content-button[clickable-block=true] .content-button__clickable-content {
+  width: 100%;
+  height: 100%;
+}
+content-button .content-button > a, content-button .content-button > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+content-button .content-button > button {
+  appearance: none;
+  background: inherit;
+  cursor: pointer;
+}

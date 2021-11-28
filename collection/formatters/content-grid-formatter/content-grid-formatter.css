@@ -1,0 +1,154 @@
+content-grid-formatter {
+  display: block;
+}
+
+.content-grid-formatter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  overflow: hidden;
+}
+.content-grid-formatter-grid > * {
+  overflow: hidden;
+}
+
+.content-grid-formatter-flex {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.content-grid-formatter-flex.content-grid-formatter-flex--flex-start {
+  justify-content: flex-start;
+}
+.content-grid-formatter-flex.content-grid-formatter-flex--space-between {
+  justify-content: space-between;
+}
+.content-grid-formatter-flex.content-grid-formatter-flex--center {
+  justify-content: center;
+}
+.content-grid-formatter-flex.content-grid-formatter-flex--space-evenly {
+  justify-content: space-evenly;
+}
+.content-grid-formatter-flex [slot=column1],
+.content-grid-formatter-flex [slot=column2] {
+  height: auto;
+}
+
+.content-grid-formatter-cols-1.content-grid-formatter-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+.content-grid-formatter-cols-1.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/1);
+}
+.content-grid-formatter-cols-1.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-1.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-2.content-grid-formatter-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.content-grid-formatter-cols-2.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/2);
+}
+.content-grid-formatter-cols-2.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-2.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-3.content-grid-formatter-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.content-grid-formatter-cols-3.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/3);
+}
+.content-grid-formatter-cols-3.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-3.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-4.content-grid-formatter-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.content-grid-formatter-cols-4.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/4);
+}
+.content-grid-formatter-cols-4.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-4.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-5.content-grid-formatter-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+.content-grid-formatter-cols-5.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/5);
+}
+.content-grid-formatter-cols-5.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-5.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-6.content-grid-formatter-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+.content-grid-formatter-cols-6.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/6);
+}
+.content-grid-formatter-cols-6.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-6.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-7.content-grid-formatter-grid {
+  grid-template-columns: repeat(7, 1fr);
+}
+.content-grid-formatter-cols-7.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/7);
+}
+.content-grid-formatter-cols-7.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-7.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-8.content-grid-formatter-grid {
+  grid-template-columns: repeat(8, 1fr);
+}
+.content-grid-formatter-cols-8.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/8);
+}
+.content-grid-formatter-cols-8.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-8.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}
+.content-grid-formatter-cols-9.content-grid-formatter-grid {
+  grid-template-columns: repeat(9, 1fr);
+}
+.content-grid-formatter-cols-9.content-grid-formatter-flex > * {
+  flex: 0 0 auto;
+  width: calc(100%/9);
+}
+.content-grid-formatter-cols-9.content-grid-formatter-flex--shrink > * {
+  flex-shrink: 1;
+}
+.content-grid-formatter-cols-9.content-grid-formatter-flex--grow > * {
+  flex-grow: 1;
+}

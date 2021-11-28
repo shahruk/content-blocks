@@ -1,0 +1,18 @@
+$mobile-only: "screen and (max-width: 767px)";
+$tablet-portrait-up: "screen and (min-width: 768px)";
+$tablet-portrait-down: "screen and (max-width: 768px)";
+
+$mobile-tablet-portrait-only: "screen and (max-width: 1023px)";
+$tablet-portrait-only: "screen and (min-width: 768px) and (max-width: 1023px)";
+$tablet-landscape-up: "screen and (min-width: 1024px)";
+$tablet-landscape-down: "screen and (min-width: 1024px)";
+
+$mobile-tablet-portrait-landscape-desktop-only: "screen and (max-width: 1366px)";
+$tablet-portrait-landscape-only: "screen and (min-width: 768px) and (max-width: 1024px)";
+$tablet-portrait-landscape-pro-only: "screen and (min-width: 768px) and (max-width: 1366px)";
+$tablet-landscape-pro-only: "screen and (min-width: 1024px) and (max-width: 1366px)";
+$tablet-landscape-pro-down: "screen and (max-width: 1366px)";
+$tablet-desktop-up: "screen and (min-width: 1280px)";
+
+$desktop-large-up: "screen and (min-width: 1440px)";
+$desktop-wide-up: "screen and (min-width: 1920px)";

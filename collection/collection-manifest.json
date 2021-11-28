@@ -1,0 +1,29 @@
+{
+  "entries": [
+    "./components/content-carousel/content-carousel.js",
+    "./blocks/content-hero-block/content-hero-block.js",
+    "./elements/content-line/content-line.js",
+    "./elements/content-video/content-video.js",
+    "./blocks/content-split-block/content-split-block.js",
+    "./blocks/content-text-block/content-text-block.js",
+    "./blocks/content-tout-block/content-tout-block.js",
+    "./components/content-accordion/content-accordion.js",
+    "./components/content-overlay/content-overlay.js",
+    "./components/content-tabs/content-tabs.js",
+    "./elements/content-button/content-button.js",
+    "./elements/content-image/content-image.js",
+    "./formatters/content-block-formatter/content-block-formatter.js",
+    "./formatters/content-grid-formatter/content-grid-formatter.js",
+    "./formatters/content-spacing-wrapper/content-spacing-wrapper.js",
+    "./wrappers/content-block-wrapper/content-block-wrapper.js",
+    "./wrappers/content-formatter-wrapper/content-formatter-wrapper.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.5.2",
+    "typescriptVersion": "4.2.3"
+  },
+  "collections": [],
+  "bundles": [],
+  "global": "globalScript.js"
+}

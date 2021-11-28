@@ -1,0 +1,17 @@
+content-image {
+  display: block;
+  height: auto;
+}
+content-image .content-image {
+  opacity: 0;
+}
+content-image .content-image.content-image-loaded {
+  opacity: 1;
+}
+content-image .content-image img,
+content-image .content-image picture,
+content-image .content-image video {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,26 @@
+content-tout-block .content-tout-block__media {
+  position: relative;
+}
+content-tout-block .content-tout-block__media-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+content-tout-block .content-tout-block__media-content [slot=mediaContent] {
+  height: 100%;
+  width: 100%;
+}
+@media (hover: hover) {
+  content-tout-block .content-tout-block__media-content--hover {
+    opacity: 0;
+  }
+  content-tout-block .content-tout-block__media-content--hover:hover {
+    opacity: 1;
+  }
+}

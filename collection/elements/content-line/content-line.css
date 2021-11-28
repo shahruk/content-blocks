@@ -1,0 +1,18 @@
+content-line {
+  display: block;
+  word-break: break-word;
+  white-space: normal;
+}
+content-line[max-width] .content-line__inner {
+  display: inline-block;
+}
+
+.content-line-text-align-left {
+  text-align: left;
+}
+.content-line-text-align-center {
+  text-align: center;
+}
+.content-line-text-align-right {
+  text-align: right;
+}

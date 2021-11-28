@@ -1,0 +1,1 @@
+import{i as e}from"./p-4901e877.js";let s=!1,t="";document.querySelectorAll('script[type="module"]').forEach((e=>{!s&&e.src.includes("/content-blocks.esm.js")&&(s=!0,t=e.src.replace("/content-blocks.esm.js",""))})),e(document,`${t}/global/content-blocks-reset.css`);

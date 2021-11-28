@@ -1,0 +1,10 @@
+content-split-block {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  content-split-block .content-split-block--reverse .content-grid-formatter-flex > :first-child,
+content-split-block .content-split-block--reverse .content-grid-formatter-grid > :first-child {
+    order: 2;
+  }
+}

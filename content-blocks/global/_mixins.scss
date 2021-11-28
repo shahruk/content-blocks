@@ -1,0 +1,249 @@
+@mixin scaledProperty($property, $mobile: null, $tabletPortrait: null, $tabletLandscape: null, $desktop: null, $desktopLarge: null, $desktopWide: null) {
+  @if $mobile {
+    #{$property}: $mobile;
+  }
+  @if $tabletPortrait {
+    @media #{$tablet-portrait-up} {
+      #{$property}: $tabletPortrait;
+    }
+  }
+  @if $tabletLandscape {
+    @media #{$tablet-landscape-up} {
+      #{$property}: $tabletLandscape;
+    }
+  }
+  @if desktop {
+    @media #{$tablet-desktop-up} {
+      #{$property}: $desktop;
+    }
+  }
+  @if $desktopLarge {
+    @media #{$desktop-large-up} {
+      #{$property}: $desktopLarge;
+    }
+  }
+  @if $desktopWide {
+    @media #{$desktop-wide-up} {
+      #{$property}: $desktopWide;
+    }
+  }
+}
+
+@mixin allPercentRules($property) {
+  @for $i from 0 to 101 {
+    &-#{$i} {
+      #{$property}: #{1% * $i}; 
+    }
+  }
+}
+
+@mixin allPercentRulesAllDevices($property) {
+  &-mobile {
+    @include allPercentRules($property);
+  }
+  &-tablet-portrait {
+    @media #{$tablet-portrait-up} {
+      @include allPercentRules($property);
+    }
+  }
+  &-tablet-landscape {
+    @media #{$tablet-landscape-up} {
+      @include allPercentRules($property);
+    }
+  }
+  &-desktop {
+    @media #{$tablet-desktop-up} {
+      @include allPercentRules($property);
+    }
+  }
+  &-large {
+    @media #{$desktop-large-up} {
+      @include allPercentRules($property);
+    }
+  }
+  &-desktop-wide {
+    @media #{$desktop-wide-up} {
+      @include allPercentRules($property);
+    }
+  }
+}
+
+@mixin allVerticalFlexAlignItems {
+  &-top {
+    justify-content: flex-start;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-bottom {
+    justify-content: flex-end;
+  }
+}
+
+@mixin allVerticalFlexAlignItemsAllDevices {
+  &-mobile {
+    @include allVerticalFlexAlignItems;
+  }
+  &-tablet-portrait {
+    @media #{$tablet-portrait-up} {
+      @include allVerticalFlexAlignItems;
+    }
+  }
+  &-tablet-landscape {
+    @media #{$tablet-landscape-up} {
+      @include allVerticalFlexAlignItems;
+    }
+  }
+  &-desktop {
+    @media #{$tablet-desktop-up} {
+      @include allVerticalFlexAlignItems;
+    }
+  }
+  &-large {
+    @media #{$desktop-large-up} {
+      @include allVerticalFlexAlignItems;
+    }
+  }
+  &-desktop-wide {
+    @media #{$desktop-wide-up} {
+      @include allVerticalFlexAlignItems;
+    }
+  }
+}
+
+@mixin allMaxWidthRules {
+  &-left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@mixin allMaxWidthRulesAllDevices {
+  &-mobile {
+    @include allMaxWidthRules;
+  }
+  &-tablet-portrait {
+    @media #{$tablet-portrait-up} {
+      @include allMaxWidthRules;
+    }
+  }
+  &-tablet-landscape {
+    @media #{$tablet-landscape-up} {
+      @include allMaxWidthRules;
+    }
+  }
+  &-desktop {
+    @media #{$tablet-desktop-up} {
+      @include allMaxWidthRules;
+    }
+  }
+  &-large {
+    @media #{$desktop-large-up} {
+      @include allMaxWidthRules;
+    }
+  }
+  &-desktop-wide {
+    @media #{$desktop-wide-up} {
+      @include allMaxWidthRules;
+    }
+  } 
+}
+
+@mixin allTextAlignRules {
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+@mixin allHeroContentPlacementRules {
+  &-above {
+    .content-hero-block__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .content-hero-block__media,
+    .content-hero-block__content {
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+  }
+  &-below {
+    .content-hero-block__inner {
+      display: block;
+    }
+  }
+}
+@mixin allHeroContentPlacementRulesAllDevices {
+  &-mobile {
+    @include allHeroContentPlacementRules;
+  }
+  &-tablet-portrait {
+    @media #{$tablet-portrait-up} {
+      @include allHeroContentPlacementRules;
+    }
+  }
+  &-tablet-landscape {
+    @media #{$tablet-landscape-up} {
+      @include allHeroContentPlacementRules;
+    }
+  }
+  &-desktop {
+    @media #{$tablet-desktop-up} {
+      @include allHeroContentPlacementRules;
+    }
+  }
+  &-large {
+    @media #{$desktop-large-up} {
+      @include allHeroContentPlacementRules;
+    }
+  }
+  &-desktop-wide {
+    @media #{$desktop-wide-up} {
+      @include allHeroContentPlacementRules;
+    }
+  } 
+}
+
+@mixin responsiveProperty($settingKey) {
+  #{$settingKey}-mobile {
+    @content;
+  }
+  #{$settingKey}-tablet-portrait {
+    @media #{$tablet-portrait-up} {
+      @content;
+    }
+  }
+  #{$settingKey}-tablet-landscape {
+    @media #{$tablet-landscape-up} {
+      @content;
+    }
+  }
+  #{$settingKey}-desktop {
+    @media #{$tablet-desktop-up} {
+      @content;
+    }
+  }
+  #{$settingKey}-desktop-large {
+    @media #{$desktop-large-up} {
+      @content;
+    }
+  }
+  #{$settingKey}-desktop-wide {
+    @media #{$desktop-wide-up} {
+      @content;
+    }
+  } 
+}
